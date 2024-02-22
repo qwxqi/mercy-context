@@ -1,0 +1,153 @@
+.main-context-container {
+    display: none;
+
+    position: absolute;
+    top: 20.75vh;
+    left: 76.25vw;
+
+    width: 16.5vw;
+    height: 70vh;
+
+    user-select: none;
+    overflow: hidden;
+    pointer-events: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inside-context {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+  
+
+.context-menu-item {
+    width: auto;
+    height: 10%;
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    max-width: 300px;
+    overflow: hidden;
+    padding: 0.45rem;
+    border-style: solid;
+    border-width: 0.07rem;
+    border-color: rgba(110, 110, 119, 0.925);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.089) 0%, rgba(77, 79, 87, 0.177) 100%);
+ }
+
+
+.context-menu-title {
+    font-size: 1.65vh;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.0015vh;
+}
+
+.context-menu-desc {
+    font-size: 1.3vh;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.0017136vh;
+}
+
+.context-menu-items {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.context-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 101;
+}
+
+  
+  .arrow {
+    position: absolute;
+    top: 11%;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+  }
+
+  .arrow-blur {
+    filter: blur(10px);
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background-color: #32E4B0; /* Replace 'your_color_here' with your desired color value */
+}
+
+
+  .arrow2 {
+    position: absolute;
+    top: -12px;
+    right: 5px;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    opacity:0.3;
+  }
+
+  .arrow3 {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    width: 95px;
+    height: 95px;
+    z-index: 1;
+    opacity:0.3;
+  }
+  
+
+.context-image > img {
+    max-width: 30vh;
+    max-height: 23vh;
+    border: .3vh solid rgb(29, 29, 29);
+    border-radius: .2vh;
+}
+
+.context-menu-hover:hover, .close:hover, .return:hover {
+    transition: all 0.5s;
+    background: radial-gradient(circle, rgba(38, 94, 86, 0.684) 0%, rgba(31, 79, 72, 0.256) 100%);
+    border-style: solid;
+    border-color: rgb(77, 164, 151);
+  }
+
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar{
+    width: 0vh;
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.context-disabled {
+    background-color: rgb(143, 143, 143);
+    cursor: not-allowed;
+}
+
+.context-disabled:hover {
+    background-color: rgb(143, 143, 143) !important;
+}
